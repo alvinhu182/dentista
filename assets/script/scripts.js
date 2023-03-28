@@ -48,7 +48,7 @@ function showPreview3x4(event){
 
 var telefone = document.getElementById('telefone');
 var mascaraTelefone = IMask(telefone, {
-  mask: '(00) 0000-0000'
+  mask: '(00) 00000-0000'
 });
 
 

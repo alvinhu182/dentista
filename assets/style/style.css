@@ -8,25 +8,32 @@ body {
     height: 4cm;
     object-fit: cover;
     object-position: center;
+    position: relative;
   }
 
   .containerpai{
     display: flex;
+  
   }
 
   textarea {
+    margin-left: 20px;
     width: 1000px;
     height: 200px;
     resize: both;
     font-size: 2em;
+    box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+                3px 3px 7px rgba(94, 104, 121, 0.377);
   }
   
   .container{
     
     flex-direction: column;
+  
   }
   .containerpai{
     display: flex;
+
   }
 
   .form-input-raiox{
@@ -34,12 +41,14 @@ body {
     margin-right: 20px;
     width: 500px;
     height: 250px;
+    
   }
 
 .form-input-3x4 img {
     width: 100%;
     margin-bottom: 30px;
     display: none;
+    
 }
 
 .center {
@@ -58,7 +67,8 @@ body {
    
   }
   .form-input {
-    width:350px;
+    margin: 20px;
+    width:960px;
     padding:20px;
     background:#fff;
     box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
@@ -71,14 +81,10 @@ body {
   
   .form-input label {
     display:flex;
-    width:45%;
-    height:45px;
-    margin-left: 25%;
     line-height:50px;
     text-align:center;
     background:#1172c2;
     color:#fff;
-    font-size:15px;
     font-family:"Open Sans",sans-serif;
     text-transform:Uppercase;
     font-weight:600;
@@ -94,14 +100,26 @@ body {
 .multImg{
   
     height: 200px;
-    justify-content: space-between;
+    width: 200px;
+    padding: 0px 10px 0px;
 }
 
 .tittle1{
-  margin: auto;
+margin: auto;
 }
 
 select{
   font-size: 1em;
   font-weight: bolder;
+}
+
+.sumir{
+  color:transparent;
+}
+.obsImg{
+  padding: 20px;
+}
+
+.tamanhodoraiox{
+  height: 370px;
 }

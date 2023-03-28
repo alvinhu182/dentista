@@ -21,6 +21,10 @@ function showPreviewRaioX(event){
       var preview2 = document.getElementById("file-ip-raiox-preview");
       preview2.src = src;
       preview2.style.display = "flex";
+      preview2.style.width ="700px";
+      preview2.style.height ="350px";
+      preview2.style.margin ="25px 10px 25px"
+     
     }
 }
 
@@ -30,8 +34,14 @@ function showPreview3x4(event){
     if(event.target.files.length > 0){
       var src = URL.createObjectURL(event.target.files[0]);
       var preview1 = document.getElementById("file-ip-3x4-preview");
+      var iptValue = document.getElementById("file-ip-1")
       preview1.src = src;
-      preview1.style.display = "flex";
+      preview1.style.display = "block";
+      iptValue.classList.add("sumir")
     }
 }
 
+var telefone = document.getElementById('telefone');
+var mascaraTelefone = IMask(telefone, {
+  mask: '(00) 0000-0000'
+});

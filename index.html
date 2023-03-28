@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machado</title>
     <link rel="stylesheet" href="assets/style/style.css">
     <script src="assets/script/scripts.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+
+    
 </head>
 <body>
 
@@ -25,37 +27,48 @@
     <container> 
         <div> 
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome">
+            <input type="text" id="nome" name="nome" placeholder="Nome do paciente">
         </div>
         <div> 
             <label for="idade">Idade:</label>
-            <input type="number" id="idade" name="idade">
+            <input type="number" id="idade" name="idade" placeholder="Idade do paciente">
         </div>
         <div>
             <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone">
+            <input type="text" id="telefone" placeholder="(00) 0000-0000">
         </div>
         <div>
             <label for="clinica">Clínica:</label>
-            <input type="text" id="clinica" name="clinica">
+            <input type="text" id="clinica" name="clinica" placeholder="Nome da clinica">
         </div>
         <div>
             <label for="dentista">Dentista:</label>
-            <input type="text" id="dentista" name="dentista">
+            <input type="text" id="dentista" name="dentista" placeholder="Nome do dentista">
         </div>
         <div>
         <label for="date">Data:</label>
         <input type="date" id="data" name="data">
         </div>
         <div>
-        <label for="serialnumber" id="serialnumber">N° </label>
-        <input form="serialnumber" id="serialnumber" name="serialumber">
+        <label for="cpf" id="cpf">Cpf </label>
+        <input type="text" id="cpf" placeholder="000.000.000-00" autocomplete="off" maxlength="14" onkeyup="mascara_cpf()">
+        <script>
+            function mascara_cpf(){
+                var cpf = document.getElementById('cpf')
+                if(cpf.value.length == 3 || cpf.value.length == 7) {
+                    cpf.value += "." 
+                } else if(cpf.value.length == 11){
+                    cpf.value +="-"
+                }
+            }
+        </script>
+     
         </div>
     </container>
 </container>
 <container class="raiox"> 
     <div > 
-        <form>
+        <form class="tamanhodoraiox">
             <div class="form-input-raiox">
             <div class="preview2">
             <img id="file-ip-raiox-preview" style="display:none">
@@ -71,7 +84,7 @@
         <h1> Os achados abaixo foI baseado no seguinte exame radiográfico:
             <select name="role"> <option value=""></option>
             <option value="">Panorâmica</option>
-            <option value="">Projeção cefalométrica lateral</option>
+            <option value="">Periapical</option>
             <option value="">Interproximal</option>
             <option value="">Sialografia</option>
             <option value="">Oclusal</option>
@@ -83,7 +96,7 @@
       
         <textarea> </textarea>
     </container> 
-    <container> 
+    <container class="obsImg"> 
         <h2> Observações de imagens</h2>
     </container>
     <form>
@@ -93,6 +106,13 @@
         <input type="file" id="file-ip-3" multiple onchange="showPreview(this)">
         </div>
     </form>
-   
+    <script>
+        var telefone = document.getElementById('telefone');
+        var mascaraTelefone = IMask(telefone, {
+          mask: '(00) 0000-0000'
+        });
+        </script>
+
+
 </body>
 </html>

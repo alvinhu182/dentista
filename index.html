@@ -12,58 +12,77 @@
 
 <container class="containerpai">
     <container>
-        
+        <div class="preview1">
         <form>
             <div class="form-input-3x4">
-             <div class="preview1">
-                <img id="file-ip-3x4-preview" style="display:none">
+           
+                <img id="file-ip-3x4-preview" style="display:flex">
             </div>  
-            <label for="file-ip-3x4-preview"> Foto</label>
-            <input type="file" id="file-ip-1" onchange="showPreview3x4(event)">
+            <input type="file"  id="file-ip-1" onchange="showPreview3x4(event)">
             </div>
         </form>
     </container>
     <container> 
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br>
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade"><br>
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone"><br>
-        <label for="clinica">Clínica:</label>
-        <input type="text" id="clinica" name="clinica"><br>
-        <label for="dentista">Dentista:</label>
-        <input type="text" id="dentista" name="dentista"><br>
+        <div> 
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+        <div> 
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade">
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+        </div>
+        <div>
+            <label for="clinica">Clínica:</label>
+            <input type="text" id="clinica" name="clinica">
+        </div>
+        <div>
+            <label for="dentista">Dentista:</label>
+            <input type="text" id="dentista" name="dentista">
+        </div>
+        <div>
         <label for="date">Data:</label>
-        <input type="date" id="data" name="data"> <br>
+        <input type="date" id="data" name="data">
+        </div>
+        <div>
         <label for="serialnumber" id="serialnumber">N° </label>
         <input form="serialnumber" id="serialnumber" name="serialumber">
+        </div>
     </container>
 </container>
-<div class="raiox"> 
-<form>
-    <div class="form-input-raiox">
-     <div class="preview2">
-        <img id="file-ip-raiox-preview" style="display:none">
+<container class="raiox"> 
+    <div > 
+        <form>
+            <div class="form-input-raiox">
+            <div class="preview2">
+            <img id="file-ip-raiox-preview" style="display:none">
     </div>  
     <label for="file-ip-raiox-preview"> </label>
     <input type="file" id="file-ip-raiox-preview" onchange="showPreviewRaioX(event)">
-    </div>
+    
 </form>
 </div>
-    <div class="tittle1"> 
-        <h1> Os achados abaixo foram baseados nos seguintes exames radiográficos:
+</container>
+</div>
+    <container class="tittle1"> 
+        <h1> Os achados abaixo foI baseado no seguinte exame radiográfico:
             <select name="role"> <option value=""></option>
-            <option value="">teste1</option>
-            <option value="">teste2</option>
-            <option value="">teste3</option>
-            <option value="">teste4</option>
+            <option value="">Panorâmica</option>
+            <option value="">Projeção cefalométrica lateral</option>
+            <option value="">Interproximal</option>
+            <option value="">Sialografia</option>
+            <option value="">Oclusal</option>
+            <option value="">Tomografia computadorizada</option>
+            <option value="">Interproximal</option>
+
         </select> 
     </h1>
-    </div>   
-    <container class="description"> 
+      
         <textarea> </textarea>
-    </container>
+    </container> 
     <container> 
         <h2> Observações de imagens</h2>
     </container>

@@ -14,19 +14,24 @@ function showPreview(input){
         }
     }
 }
+
 function showPreviewRaioX(event){
     if(event.target.files.length > 0){
       var src = URL.createObjectURL(event.target.files[0]);
       var preview2 = document.getElementById("file-ip-raiox-preview");
       preview2.src = src;
-      preview2.style.display = "block";
+      preview2.style.display = "flex";
     }
 }
+
+
+
 function showPreview3x4(event){
     if(event.target.files.length > 0){
       var src = URL.createObjectURL(event.target.files[0]);
       var preview1 = document.getElementById("file-ip-3x4-preview");
       preview1.src = src;
-      preview1.style.display = "block";
+      preview1.style.display = "flex";
     }
 }
+

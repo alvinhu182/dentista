@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machado</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="assets/script/scripts.js"></script>
+</head>
+<body>
+
+<container class="containerpai">
+    <container>
+        
+        <form>
+            <div class="form-input-3x4">
+             <div class="preview1">
+                <img id="file-ip-3x4-preview" style="display:none">
+            </div>  
+            <label for="file-ip-3x4-preview"> Foto</label>
+            <input type="file" id="file-ip-1" onchange="showPreview3x4(event)">
+            </div>
+        </form>
+    </container>
+    <container> 
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade"><br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"><br>
+        <label for="clinica">Clínica:</label>
+        <input type="text" id="clinica" name="clinica"><br>
+        <label for="dentista">Dentista:</label>
+        <input type="text" id="dentista" name="dentista"><br>
+        <label for="date">Data:</label>
+        <input type="date" id="data" name="data"> <br>
+        <label for="serialnumber" id="serialnumber">N° </label>
+        <input form="serialnumber" id="serialnumber" name="serialumber">
+    </container>
+</container>
+<div class="raiox"> 
+<form>
+    <div class="form-input-raiox">
+     <div class="preview2">
+        <img id="file-ip-raiox-preview" style="display:none">
+    </div>  
+    <label for="file-ip-raiox-preview"> </label>
+    <input type="file" id="file-ip-raiox-preview" onchange="showPreviewRaioX(event)">
+    </div>
+</form>
+</div>
+    <div class="tittle1"> 
+        <h1> Os achados abaixo foram baseados nos seguintes exames radiográficos:
+            <select name="role"> <option value=""></option>
+            <option value="">teste1</option>
+            <option value="">teste2</option>
+            <option value="">teste3</option>
+            <option value="">teste4</option>
+        </select> 
+    </h1>
+    </div>   
+    <container class="description"> 
+        <textarea> </textarea>
+    </container>
+    <container> 
+        <h2> Observações de imagens</h2>
+    </container>
+    <form>
+        <div class="form-input">
+         <div class="preview3" id="multiple-preview"></div>  
+        <label for="file-ip-3"> Upload image</label>
+        <input type="file" id="file-ip-3" multiple onchange="showPreview(this)">
+        </div>
+    </form>
+   
+</body>
+</html>

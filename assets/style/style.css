@@ -84,7 +84,8 @@ body {
     line-height:50px;
     text-align:center;
     background:#1172c2;
-    color:#fff;
+    color:transparent;
+    
     font-family:"Open Sans",sans-serif;
     text-transform:Uppercase;
     font-weight:600;
@@ -115,6 +116,7 @@ select{
 
 .sumir{
   color:transparent;
+  display: none;
 }
 .obsImg{
   padding: 20px;
@@ -122,4 +124,8 @@ select{
 
 .tamanhodoraiox{
   height: 390px;
+}
+
+.preview1{
+  margin-right: 20px;
 }
